@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    job:
+      name: job
+      tasks:
+        - task_key: injestionjob
+          notebook_task:
+            notebook_path: /Workspace/Users/ajayvanam15@gmail.com/asset_bundless/dabproj/src/ingestion1
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED

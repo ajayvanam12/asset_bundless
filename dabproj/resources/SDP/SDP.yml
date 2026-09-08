@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_sdp_pipeline:
+      name: SDP_PIPELINE
+      libraries:
+        - glob:
+            include: /Workspace/Users/ajayvanam15@gmail.com/asset_bundless/dabproj/src/transformations/**
+      schema: ansh
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: devs
+      serverless: true
